@@ -1,4 +1,40 @@
+//algoritmo de ciclo 
 
+const primerNumero = parseInt(prompt("Hola soy tu calculadora interactiva! Ademas de escuchar tus cuentos favoritos, La Tía Botas te ayudará con el maravilloso mundo de las matemáticas.  INGRESA CUALQUIER NUMERO"));
+const operacion = prompt("Ahora solo escribe la operacion que deseas (sumar, restar, multiplicar, dividir)");
+const segundoNumero = parseInt(prompt("Finalmente ingresa otro numero"));
+
+function calculadora() {
+let resultado = 0;
+    switch (operacion) {
+        case "sumar":
+            resultado = primerNumero + segundoNumero;
+            alert(resultado);
+            break;
+        case "restar":
+            resultado = primerNumero - segundoNumero;
+            alert(resultado);
+            break;
+        case "dividir":
+            resultado = primerNumero / segundoNumero;
+            alert(resultado);
+            break;
+        case "multiplicar":
+            resultado = primerNumero * segundoNumero;
+            alert(resultado);
+            break;
+        default:
+            alert("Ups! Hay un pequeño problemita, revisa bien mayusculas y minusculas y vuelve a intentar");
+            break;
+    }
+}
+
+for(let i = 0;i < 3; i++){
+    const respuestaDelUsuario = prompt("Escribe la operacion que deseas (sumar, restar, multiplicar, dividir");
+    calculadora(respuestaDelUsuario, primerNumero, segundoNumero);
+}
+
+//algoritmo condicional
 
 let genero = prompt("Bienvenido al Reproductor Intercativo de la Tía Botas. Escribe tu género favorito: aventuras o risas o fantasias")
 
